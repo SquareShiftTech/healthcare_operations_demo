@@ -271,7 +271,7 @@ view: encounter {
     sql: ${service_provider}.organizationId ;;
     link: {
       label: "Operations Overview for Hospital"
-      url: "/dashboards/feLFb25D6JjKic14MdPKhb?Hospital%20ID={{ value }}"
+      url: "/dashboards/qStCcpjB2qpFpIH7Y0P4YU?Hospital%20ID={{ value }}"
       icon_url: "https://avatars0.githubusercontent.com/u/1437874?s=400&v=4"
     }
   }

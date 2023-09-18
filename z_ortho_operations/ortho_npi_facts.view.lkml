@@ -27,7 +27,7 @@ view: ortho_npi_facts {
     link: {
       label: "{{ value }} Performance Dashboard"
       #label: "Provider Performance Dashboard - {{value}}"
-      url: "https://googledemo.looker.com/dashboards/615?Hospital%20Facility={{ value | encode_uri }}"
+      url: "/dashboards/hCAzULJeXdkyDxGYZgJBLx?Hospital%20Facility={{ value | encode_uri }}"
       icon_url: "http://www.looker.com/favicon.ico"
     }
   }

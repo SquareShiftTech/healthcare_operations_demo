@@ -19,7 +19,7 @@ view: organization {
     sql: ${TABLE}.name ;;
     link: {
       label: "Hospital Deep Dive"
-      url: "/dashboards/vyXnb2W5dPGRLmjmsm45nH?Hospital={{ value | url_encode }}"
+      url: "/dashboards/dpVoUpPaD9qBxQKxDBCzsm?Hospital={{ value | url_encode }}"
       icon_url: "http://www.looker.com/favicon.ico"
     }
     link: {

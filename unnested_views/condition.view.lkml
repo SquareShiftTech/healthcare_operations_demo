@@ -230,7 +230,7 @@ view: condition__code__coding {
     link: {
       label: "Condition Lookup Dashboard"
       icon_url: "https://avatars0.githubusercontent.com/u/1437874?s=400&v=4"
-      url: "/dashboards/TU4SBUVLvW1gDzfwCms2ji?Condition%20Code={{ value }}"
+      url: "/dashboards/xSz6jOn1TbIAdYc8qny3tP?Condition%20Code={{ value }}"
     }
     action: {
       label: "Email Department Head"
@@ -266,8 +266,8 @@ view: condition__code__coding {
     link: {
       label: "{{ value }} Condition Lookup Dashboard"
       icon_url: "https://avatars0.githubusercontent.com/u/1437874?s=400&v=4"
-      url: "{% if _view._name == 'prior_condition__code__coding' %}/dashboards/TU4SBUVLvW1gDzfwCms2ji?Condition%20Code={{ prior_condition__code__coding.code._value }}
-      {% else %}/dashboards-next/TU4SBUVLvW1gDzfwCms2ji?Condition%20Code={{ condition__code__coding.code._value }} {% endif %}"
+      url: "{% if _view._name == 'prior_condition__code__coding' %}/dashboards/xSz6jOn1TbIAdYc8qny3tP?Condition%20Code={{ prior_condition__code__coding.code._value }}
+      {% else %}/dashboards/xSz6jOn1TbIAdYc8qny3tP?Condition%20Code={{ condition__code__coding.code._value }} {% endif %}"
     }
     # drill_fields: [encounter.]
 }

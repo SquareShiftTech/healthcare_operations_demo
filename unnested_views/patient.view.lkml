@@ -182,7 +182,7 @@ view: patient {
     sql: CONCAT(${first_name}, ' ',${last_name}) ;;
     link: {
       label: "Patient Overview"
-      url: "/dashboards/lySN7HBweHGmx1tI98biDh?Patient ID={{ patient.id._value }}&Patient%20Name={{ patient.name._value }}"
+      url: "/dashboards/EKJPLDjpOhvARHSo5xQc7L?Patient ID={{ patient.id._value }}&Patient%20Name={{ patient.name._value }}"
       icon_url: "https://www.google.com/s2/favicons?domain=https://meta.looker.com/browse"
     }
     action: {
