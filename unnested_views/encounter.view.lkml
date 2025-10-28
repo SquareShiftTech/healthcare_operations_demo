@@ -29,10 +29,10 @@ view: encounter {
         name: "Body"
         type: textarea
         required: yes
-        default:
-        "Dear Betty,
+        # default:
+        # "Dear Betty,
 
-        {{ patient.name }} has been readmitted and wanted to follow up to schedule time to review the discharge plan for encounter ID: {{ value }}. Thanks!"
+        # {{ patient.name }} has been readmitted and wanted to follow up to schedule time to review the discharge plan for encounter ID: {{ value }}. Thanks!"
       }
 
     }

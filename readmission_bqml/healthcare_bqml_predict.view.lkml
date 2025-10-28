@@ -637,7 +637,8 @@ view: bqml_predict {
     type: number
     sql: AVG(${TABLE}.prob) ;;
     value_format_name: percent_2
-    sql_distinct_key: ${encounter_id} ;;
+
+    # sql_distinct_key: ${encounter_id} ;;
   }
 
 }

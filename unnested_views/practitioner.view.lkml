@@ -118,13 +118,13 @@ view: practitioner {
 
         # Best,
         # "
-        default:
-        "Hi {{ value }} -
+        # default:
+        # "Hi {{ value }} -
 
-         We've noticed some errors in this sample {{ observation_vitals.encounter_id }}. Can you review?
+        # We've noticed some errors in this sample {{ observation_vitals.encounter_id }}. Can you review?
 
-         Best,
-         "
+        # Best,
+        # "
       }
     }
   }

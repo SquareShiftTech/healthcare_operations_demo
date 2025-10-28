@@ -633,6 +633,7 @@ explore: healthcare_training_info1 {}
 explore: healthcare_bqml_predict {
   join: prediction_probs {
     sql: LEFT JOIN UNNEST(${healthcare_bqml_predict.predicted_readmission_within_7_probs}) as prediction_probs ;;
+    relationship: many_to_one
   }
 }
 explore: healthcare_bqml_eval {}
@@ -643,6 +644,7 @@ explore: healthcare_bqml_new_patients {}
 explore: healthcare_bqml_new_patient_predictions {
   join: prediction_probs {
     sql: LEFT JOIN UNNEST(${healthcare_bqml_new_patient_predictions.predicted_readmission_within_7_probs}) as prediction_probs ;;
+    relationship: many_to_one
   }
 }
 explore: new_patient_info_schema {}

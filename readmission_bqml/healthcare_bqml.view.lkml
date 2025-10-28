@@ -13,11 +13,11 @@ view: healthcare_bqml_input {
 view: healthcare_bqml_fit {
   derived_table: {
     sql:CREATE OR REPLACE MODEL
-  `       healthcare_demo_live.automl_classifier` OPTIONS(model_type='AUTOML_CLASSIFIER',
-                                            INPUT_LABEL_COLS =  ["readmission_within_7"],
-                                            DATA_SPLIT_COL = "discharge_date"
-              ) AS
-              SELECT * FROM ${healthcare_bqml_input.SQL_TABLE_NAME};;
+        `       healthcare_demo_live.automl_classifier` OPTIONS(model_type='AUTOML_CLASSIFIER',
+                                                  INPUT_LABEL_COLS =  ["readmission_within_7"],
+                                                  DATA_SPLIT_COL = "discharge_date"
+                    ) AS
+                    SELECT * FROM ${healthcare_bqml_input.SQL_TABLE_NAME};;
   }
 }
 
@@ -702,7 +702,7 @@ view: new_patient_predictions_info_schema {
   derived_table: {
     sql:
       SELECT *
-      FROM healthcare_demo_live.INFORMATION_SCHEMA.TABLES  AS healthcare_bqml_new_patients
+      FROM  `looker-private-demo.healthcare_demo_live.INFORMATION_SCHEMA.TABLES`  AS healthcare_bqml_new_patients
       WHERE table_name = "new_patient_visits"
     ;;
   }
@@ -744,8 +744,8 @@ view: new_patient_predictions_info_schema {
 
 
 view: healthcare_bqml_new_patient_predictions {
-derived_table: {
-      sql:
+  derived_table: {
+    sql:
           SELECT
               *
             FROM
@@ -763,7 +763,7 @@ derived_table: {
                   *
                 FROM
                   CTE));;
-    }
+  }
   dimension: patient_name {}
   dimension: predicted_readmission_within_7 {}
   dimension: predicted_readmission_within_7_probs {hidden:yes}
@@ -784,6 +784,7 @@ view: new_patient_info_schema {
       WHERE table_name = 'new_patient_visits'
       ;;
   }
+
 
   measure: count {
     type: count
@@ -968,7 +969,7 @@ view: healthcare_predictions {
 }
 
 view: patient_survey {
-  sql_table_name: healthcare_demo_live.patient_survey;;
+  sql_table_name: looker-private-demo.healthcare_demo_live.patient_survey;;
 
   dimension: ease_of_scheduling_appointment {
     label: "How easy was it to schedule an appointment with our facility?"

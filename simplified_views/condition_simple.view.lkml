@@ -26,7 +26,7 @@ view: condition_simple {
     sql: ${TABLE}.code ;;
     link: {
       label: "Map SNOWMED to ICD-10"
-      url: "https://imagic.nlm.nih.gov/imagic/code/map?v=5&js=true&pabout=&pinstructions=&init-params=&pat=My+Patient&pat.init=My+Patient&q.f=&q.dob=&p=cad2f1b3z0&p.cad2f1b3z0.e={{ display._value }}&pdone=Get+ICD+Codes&qadd="
+      # url: "https://imagic.nlm.nih.gov/imagic/code/map?v=5&js=true&pabout=&pinstructions=&init-params=&pat=My+Patient&pat.init=My+Patient&q.f=&q.dob=&p=cad2f1b3z0&p.cad2f1b3z0.e={{ display._value }}&pdone=Get+ICD+Codes&qadd="
       icon_url: "https://www.nih.gov/sites/default/files/about-nih/2012-logo.png"
     }
     link: {

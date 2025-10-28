@@ -212,8 +212,9 @@
     model: healthcare_operations
     explore: ortho_procedures
     type: looker_scatter
-    fields: [ortho_npi_facts.npi, ortho_npi_facts.npi_rank, ortho_procedures.total_procedural_charges,
-      ortho_encounters.count]
+    fields: [ortho_npi_facts.npi, ortho_npi_facts.npi_rank, ortho_procedures.total_procedural_charges
+    # ,ortho_encounters.count
+    ]
     sorts: [ortho_procedures.total_procedural_charges desc]
     limit: 500
     column_limit: 50
