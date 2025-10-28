@@ -1,5 +1,5 @@
-- dashboard: patient_details
-  title: Patient Details
+- dashboard: patient
+  title: Patient
   layout: newspaper
   elements:
   - title: Patient Details

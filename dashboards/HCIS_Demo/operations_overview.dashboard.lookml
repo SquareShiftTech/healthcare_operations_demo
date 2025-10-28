@@ -1,5 +1,5 @@
-- dashboard: healthcare_operations_overview
-  title: Healthcare Operations Overview
+- dashboard: healthcare_operations
+  title: Healthcare Operations
   layout: newspaper
   elements:
   - title: ED Wait Time

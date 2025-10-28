@@ -9,7 +9,8 @@ include: "*.view"
 label: "Healthcare Systems and Providers"
 include: "/readmission_bqml/*.dashboard.lookml"
 include: "/readmission_bqml/*.view.lkml"
-
+include: "/dashboards/HCIS_Demo/operations_overview.dashboard.lookml"
+include: "/dashboards/HCIS_Demo/patient_overview.dashboard.lookml"
 ############ Unnested Explores #############
 
 ####### Step 1: Base explores
